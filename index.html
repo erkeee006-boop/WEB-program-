@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Campus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🎓</span>
+      <h2>SmartCampus</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#overview" class="active">Басты бет</a></li>
+        <li><a href="#courses">Пәндер</a></li>
+        <li><a href="#schedule">Кесте</a></li>
+        <li><a href="#contact">Байланыс</a></li>
+      </ul>
+    </nav>
+    <div class="user-profile">
+      <div class="avatar">ЕЕ</div>
+      <span class="user-name">Ермухан Еркежан</span>
+    </div>
+  </header>
+
+  <main class="dashboard-container">
+    
+    <section id="overview" class="hero-card">
+      <div class="hero-text">
+        <h1>Қайырлы күн, Еркежан! 👋</h1>
+        <p>Күзгі семестр сабақ кестесі мен оқу көрсеткіштеріңіз.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="stat-label">Орташа GPA</span>
+          <span class="stat-value">3.88</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Кредит саны</span>
+          <span class="stat-value">24 ECTS</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Орындалған тапсырмалар</span>
+          <span class="stat-value">92%</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="glass-section">
+      <div class="section-header">
+        <h2>Ағымдағы пәндер</h2>
+        <span class="badge">Күзгі семестр 2026</span>
+      </div>
+
+      <div class="courses-grid">
+        
+        <div class="course-card">
+          <div class="course-icon">💻</div>
+          <div class="course-info">
+            <h3>Web-қосымшаларды программалау</h3>
+            <p>Оқытушы: Сейдазимов С.Б. / Бахытжанұлы Д.</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+            </div>
+            <span class="progress-text">Үлгерім: 85%</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🤖</div>
+          <div class="course-info">
+            <h3>Жасанды интеллект жүйелері</h3>
+            <p>Оқытушы: Алимбаева Ж.Н.</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+            <span class="progress-text">Үлгерім: 90%</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">📊</div>
+          <div class="course-info">
+            <h3>Ақпараттық аналитикалық жүйелер</h3>
+            <p>Оқытушы: Калдыбаева А.С.</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 78%;"></div>
+            </div>
+            <span class="progress-text">Үлгерім: 78%</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="two-column">
+      
+      <section id="schedule" class="glass-section">
+        <div class="section-header">
+          <h2>Сабақ кестесі</h2>
+          <div class="day-tabs">
+            <button class="tab-btn active" data-day="pn">Дүй</button>
+            <button class="tab-btn" data-day="vt">Сей</button>
+            <button class="tab-btn" data-day="sr">Сәр</button>
+            <button class="tab-btn" data-day="cht">Бей</button>
+            <button class="tab-btn" data-day="pt">Жұм</button>
+          </div>
+        </div>
+
+        <div class="schedule-content">
+          <ul class="schedule-list day-schedule active" id="pn">
+            <li class="schedule-item">
+              <span class="time">11:00 - 11:50</span>
+              <div class="details">
+                <strong>IT жобаларын басқару (D)</strong>
+                <small>Абуова Ж.К. | №3 - оқу ғимараты, 401</small>
+              </div>
+              <span class="status lecture">Дәріс</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">13:00 - 14:50</span>
+              <div class="details">
+                <strong>Жасанды интеллект жүйелері (ЛЖ)</strong>
+                <small>Алимбаева Ж.Н. | Бас оқу ғимараты, 216-комп. сынып</small>
+              </div>
+              <span class="status lab">Лаб/Практ</span>
+            </li>
+          </ul>
+
+          <ul class="schedule-list day-schedule" id="vt">
+            <li class="schedule-item">
+              <span class="time">13:00 - 14:50</span>
+              <div class="details">
+                <strong>IT жобаларын басқару (ЛЖ)</strong>
+                <small>Абуова Ж.К. | Бас оқу ғимараты, К-4 комп. класс</small>
+              </div>
+              <span class="status lab">Лаб/Практ</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">15:00 - 15:50</span>
+              <div class="details">
+                <strong>Кәсіби этика және сәйкестік (ПС)</strong>
+                <small>Қожағұл А.Т. | Бас оқу ғимараты, 205 - аудитория</small>
+              </div>
+              <span class="status practice">Семинар</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">16:00 - 16:50</span>
+              <div class="details">
+                <strong>Кәсіби этика және сәйкестік (ПС)</strong>
+                <small>Қожағұл А.Т. | Бас оқу ғимараты, К-3 аудитория</small>
+              </div>
+              <span class="status practice">Семинар</span>
+            </li>
+          </ul>
+
+          <ul class="schedule-list day-schedule" id="sr">
+            <li class="schedule-item">
+              <span class="time">10:00 - 10:50</span>
+              <div class="details">
+                <strong>Кәсіби этика және сәйкестік (D)</strong>
+                <small>Қожағұл А.Т. | №3 - оқу ғимараты, 401</small>
+              </div>
+              <span class="status lecture">Дәріс</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">11:00 - 11:50</span>
+              <div class="details">
+                <strong>Ақпараттық аналитикалық жүйелер (D)</strong>
+                <small>Калдыбаева А.С. | №3 - оқу ғимараты, 401</small>
+              </div>
+              <span class="status lecture">Дәріс</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">13:00 - 14:50</span>
+              <div class="details">
+                <strong>АЖ-дегі мәліметтер базасы (ЛЖ)</strong>
+                <small>Сулейменов Г.М. | Бас оқу ғимараты, К-4 комп. класс</small>
+              </div>
+              <span class="status lab">Лаб/Практ</span>
+            </li>
+          </ul>
+
+          <ul class="schedule-list day-schedule" id="cht">
+            <li class="schedule-item">
+              <span class="time">14:00 - 14:50</span>
+              <div class="details">
+                <strong>АЖ-дегі мәліметтер базасы (D)</strong>
+                <small>Есентаев К.У. | Бас оқу ғимараты, К-1 аудитория</small>
+              </div>
+              <span class="status lecture">Дәріс</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">15:00 - 17:50</span>
+              <div class="details">
+                <strong>Web-қосымшаларды программалау (ЛЖ)</strong>
+                <small>Бахытжанұлы Д. | Бас оқу ғимараты, 223-комп. сынып</small>
+              </div>
+              <span class="status lab">Лаб/Практ</span>
+            </li>
+          </ul>
+
+          <ul class="schedule-list day-schedule" id="pt">
+            <li class="schedule-item">
+              <span class="time">12:00 - 12:50</span>
+              <div class="details">
+                <strong>Web-қосымшаларды программалау (D)</strong>
+                <small>Сейдазимов С.Б. | Бас оқу ғимараты, 201-Аудитория</small>
+              </div>
+              <span class="status lecture">Дәріс</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">13:00 - 13:50</span>
+              <div class="details">
+                <strong>Жасанды интеллект жүйелері (D)</strong>
+                <small>Алимбаева Ж.Н. | Бас оқу ғимараты, Л-1</small>
+              </div>
+              <span class="status lecture">Дәріс</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">14:00 - 15:50</span>
+              <div class="details">
+                <strong>Ақпараттық аналитикалық жүйелер (ЛЖ)</strong>
+                <small>Калдыбаева А.С. | Бас оқу ғимараты, К-4 комп. класс</small>
+              </div>
+              <span class="status lab">Лаб/Практ</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="glass-section">
+        <h2>Деканатқа сұраныс жіберу</h2>
+        <form id="supportForm">
+          <div class="form-group">
+            <label for="studentId">Студент ID:</label>
+            <input type="text" id="studentId" value="2026-BD-8901" readonly>
+          </div>
+          <div class="form-group">
+            <label for="topic">Сұрақ санаты:</label>
+            <select id="topic" required>
+              <option value="">Таңдаңыз...</option>
+              <option value="academic">Академиялық анықтама</option>
+              <option value="reassessment">Бағаны қайта қарау</option>
+              <option value="tech">IT Қолдау</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Өтініш мәтіні:</label>
+            <textarea id="message" rows="3" placeholder="Сұрағыңызды жазыңыз..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Жіберу</button>
+        </form>
+        <p id="formStatus"></p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SmartCampus Academic Portal. Барлық құқықтар қорғалған.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
